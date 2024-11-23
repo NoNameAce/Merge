@@ -1,0 +1,39 @@
+.footer{
+    padding: 50px 10%;
+    background-color: black;
+    color: white;
+}
+
+.above{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pis{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: gray;
+}
+
+.below{
+    color: gray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+@media(max-width: 400px) {
+    .above{
+        flex-wrap: wrap;
+    }
+
+    .below p {
+        display: none;
+    }
+}

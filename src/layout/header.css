@@ -1,0 +1,54 @@
+*{
+    font-family: sans-serif;
+}
+
+.mediaHeader{
+    display: none;
+}
+
+.header{
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.headerLogoSide{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 20px;
+    color: gray;
+}
+.headerOtherSide{
+    width: 50%;
+    input{
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        color: gray;
+        background-color: rgb(227, 227, 227);
+        border: none;
+    }
+    button{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media(max-width: 400px){
+    .mediaHeader{
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .size-6{
+        height: 40px;
+    }
+
+    .header{
+        display: none;
+    }
+}

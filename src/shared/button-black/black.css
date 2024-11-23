@@ -1,0 +1,14 @@
+.black{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    &:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.5s;
+    }
+}
