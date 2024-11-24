@@ -1,9 +1,7 @@
-import React from 'react'
-
 const Ninth = () => {
   return (
     <div>
-        <h1>Rashid</h1>
+        <h1 style={{textAlign:'center'}}>Create Your NFT</h1>
     </div>
   )
 }
