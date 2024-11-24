@@ -1,9 +1,11 @@
 import React from 'react'
-
+import('./fifth.css')
 const Fifth = () => {
   return (
-    <div>
-        <h1>Muhammad</h1>
+    <div className='Box'>
+      <div>
+        <b>History of Bid</b>
+      </div>
     </div>
   )
 }

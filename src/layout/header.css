@@ -10,11 +10,13 @@
     display: flex;
     padding: 20px 10%;
     justify-content: space-between;
+    align-items: center;
     gap: 5%;
 }
 
 .headerLogoSide{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 50%;
     font-size: 20px;
