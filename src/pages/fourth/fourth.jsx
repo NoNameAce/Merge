@@ -3,6 +3,9 @@ import icon9 from './images/icon (9).png'
 import img41 from './images/Image (41).png'
 import el28 from './images/Ellipse 28.png'
 import el29 from './images/Ellipse 29 (1).png'
+import el1 from './images/Ellipse 29.png'
+import el30 from './images/Ellipse 30.png'
+import el31 from './images/Ellipse 31.png'
 import vec from './images/Vector (10).png'
 import eth from './images/fa6-brands_ethereum.png'
 import group from './images/Group 127.png'
@@ -72,7 +75,52 @@ export function ProDeteil() {
 
       {modal && (
         <div className="modal">
-          
+          <b>History of Bid</b>
+          <p style={{marginBottom:'30px'}}>Oct 14, 2022</p>
+          <div className='mini-box'>
+            <img src={el1} alt="" />
+            <div>
+              <b>Repo</b>
+              <p>May 17, 2022 at 12:08</p>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <img src={eth} alt="Ethereum" />
+              <h3>1.75</h3>
+            </div>
+          </div>
+          <div className='mini-box'>
+            <img src={el30} alt="" />
+            <div>
+              <b>Repo</b>
+              <p>May 17, 2022 at 12:08</p>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <img src={eth} alt="Ethereum" />
+              <h3>1.75</h3>
+            </div>
+          </div>
+          <div className='mini-box'>
+            <img src={el31} alt="" />
+            <div>
+              <b>Repo</b>
+              <p>May 17, 2022 at 12:08</p>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <img src={eth} alt="Ethereum" />
+              <h3>1.75</h3>
+            </div>
+          </div>
+
+          <b >Your Bid</b>
+          <form action="">
+            <select name="" id=""><option value="">ETH</option></select>
+            <input type="text" />
+          </form>
+
+          <button onClick={() => setModal(false)} className="button1">
+            <img src={vec} alt="Place bid icon" />
+            Submit
+          </button>
         </div>
       )}
     </div>
