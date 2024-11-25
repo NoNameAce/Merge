@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import icon9 from './123/images/icon (9).png'
-import img41 from './123/images/Image (41).png'
-import el28 from './123/images/Ellipse 28.png'
-import el29 from './123/images/Ellipse 29 (1).png'
-import el1 from './123/images/Ellipse 29.png'
-import el30 from './123/images/Ellipse 30.png'
-import el31 from './123/images/Ellipse 31.png'
-import vec from './123/images/Vector (10).png'
-import eth from './123/images/fa6-brands_ethereum.png'
-import group from './123/images/Group 127.png'
-import frame from './123/images/Frame 115.png'
-import frame2 from './123/images/Frame 117.png'
-import rec283 from './123/images/Rectangle 283.png'
-import rec284 from './123/images/Rectangle 283 (1).png'
-import BidHistoryImg from './images/Bid History.png'
-import './sixth.css'
+import icon9 from './images/icon (9).png'
+import img41 from './images/Image (41).png'
+import el28 from './images/Ellipse 28.png'
+import el29 from './images/Ellipse 29 (1).png'
+import el1 from './images/Ellipse 29.png'
+import el30 from './images/Ellipse 30.png'
+import el31 from './images/Ellipse 31.png'
+import vec from './images/Vector (10).png'
+import eth from './images/fa6-brands_ethereum.png'
+import group from './images/Group 127.png'
+import frame from './images/Frame 115.png'
+import frame2 from './images/Frame 117.png'
+import rec283 from './images/Rectangle 283.png'
+import rec284 from './images/Rectangle 283 (1).png'
+import('./fourth.css')
 
 export function ProDeteil() {
+  const [modal, setModal] = useState(false);
 
-
-
+  const closeModal = () => {
+    setModal(false);
+  };
 
   return (
-    
     <div className="box1">
       <div className="header-box1">
         <img src={icon9} alt="Icon" />
@@ -73,47 +73,8 @@ export function ProDeteil() {
         </div>
       </div>
 
-      
-    </div>
-  );
-}
-
-
-
-export function FromCreator() {
-  return <div className='box-2'>
-    <h2>From Creator</h2>
-    <div className='cards-box'>
-      <Cards src={rec283} />
-      <Cards src={rec284} />
-      <Cards src={img41} />
-      <Cards src={rec283} />
-      <Cards src={rec284} />
-    </div>
-  </div>
-}
-
-function Cards(props) {
-  return <div className='cards'>
-    <img className='img1-card' src={props.src} alt="" />
-    <p className='checked'>Perperzon <img src={group} alt="" /></p>
-    <b>Sun-Glass</b>
-    <div>
-      <img src={frame} alt="" />
-      <img src={frame2} alt="" />
-    </div>
-  </div>
-}
-
-
-
-
- const Sixth = () => {
-  return <div className='container'>
-    <ProDeteil />
-
-    <div style={{marginLeft:"100px",display:"flex"}}><img src={BidHistoryImg} alt="" />
-    <div className='bg-op'>
+      {modal && (
+        <div className='bg-op'>
           <div className="modal">
             <b>History of Bid</b>
             <p style={{ marginBottom: '30px' }}>Oct 14, 2022</p>
@@ -163,10 +124,47 @@ function Cards(props) {
             </button>
           </div>
         </div>
+      )}
     </div>
+  );
+}
+
+
+
+export function FromCreator() {
+  return <div className='box-2'>
+    <h2>From Creator</h2>
+    <div className='cards-box'>
+      <Cards src={rec283} />
+      <Cards src={rec284} />
+      <Cards src={img41} />
+      <Cards src={rec283} />
+      <Cards src={rec284} />
+    </div>
+  </div>
+}
+
+function Cards(props) {
+  return <div className='cards'>
+    <img className='img1-card' src={props.src} alt="" />
+    <p className='checked'>Perperzon <img src={group} alt="" /></p>
+    <b>Sun-Glass</b>
+    <div>
+      <img src={frame} alt="" />
+      <img src={frame2} alt="" />
+    </div>
+  </div>
+}
+
+
+
+
+export const Fourth = () => {
+  return <div className='container'>
+    <ProDeteil />
 
     <FromCreator />
   </div>
 }
 
-export default Sixth
+export default Fourth
