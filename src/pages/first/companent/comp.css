@@ -1,0 +1,57 @@
+
+
+.divFirstComp{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 100px;
+    h1 {
+         font-size: 45px;
+         padding-top: 50px;
+    }
+    p {
+        font-size: 15px;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px;
+    }
+ 
+
+    
+
+}
+.divSecondComp{
+    
+   
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    margin-bottom: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.btnPosition{
+    position: absolute;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: -100px;
+    background: #5178ed30;
+    border: none;
+    padding: 5px;
+    
+   
+
+}
+.divTherdComp{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}

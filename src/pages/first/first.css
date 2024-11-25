@@ -1,0 +1,141 @@
+/* Base styles */
+.All1 {
+    h1 {
+        text-align: center;
+    }
+    padding: 50px;
+    margin-top: 100px;
+    background-color: whitesmoke;
+}
+
+.All2 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin: 50px;
+    h3 {
+        margin-right: 400px;
+    }
+}
+
+.All3 {
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    button {
+        border-radius: 10px;
+    }
+}
+
+.All4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: whitesmoke;
+}
+
+.EnndDiv {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 100px;
+    h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .All1 {
+        padding: 20px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .All1Child{
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin: auto;
+    }
+
+
+    .All2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        h3 {
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+
+    .All3 {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        padding: 5px;
+        button {
+            width: 100%; 
+        }
+    }
+
+    .All4 {
+        grid-template-columns: 1fr; 
+        margin-top: 150px;
+        gap: 50px;
+        background-color: white;
+    }
+
+    .EnndDiv {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        h1 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 17px
+        }
+        
+    }
+    .imgEnd{
+       width: 200px;
+       margin: auto;
+    }
+    .pExlop
+    {
+        display: none;
+    }
+    .divFirstComp{
+      flex-direction: column;
+      background-color: white;
+     
+    }
+    .divFirstCompNamn
+    {
+        display: none;
+    }
+    .divFirstCompChild
+    {
+        margin-left: -100px;
+    }
+    .divSecondComp{
+        flex-direction: column;
+        background-color: white;
+    }
+    .imgNone
+    {
+        margin-top: 100px;
+        display: none;
+    }
+    .divNameTherd{
+        display: none;
+    }
+}
