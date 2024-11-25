@@ -393,3 +393,12 @@ text-decoration-skip-ink: none;
 color: #9C9C9C;
     }
 }
+
+.bg-op{
+    background-color: black;
+    position:fixed;
+    padding: 20px;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}

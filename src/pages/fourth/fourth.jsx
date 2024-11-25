@@ -74,53 +74,55 @@ export function ProDeteil() {
       </div>
 
       {modal && (
-        <div className="modal">
-          <b>History of Bid</b>
-          <p style={{marginBottom:'30px'}}>Oct 14, 2022</p>
-          <div className='mini-box'>
-            <img src={el1} alt="" />
-            <div>
-              <b>Repo</b>
-              <p>May 17, 2022 at 12:08</p>
+        <div className='bg-op'>
+          <div className="modal">
+            <b>History of Bid</b>
+            <p style={{ marginBottom: '30px' }}>Oct 14, 2022</p>
+            <div className='mini-box'>
+              <img src={el1} alt="" />
+              <div>
+                <b>Repo</b>
+                <p>May 17, 2022 at 12:08</p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={eth} alt="Ethereum" />
+                <h3>1.75</h3>
+              </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src={eth} alt="Ethereum" />
-              <h3>1.75</h3>
+            <div className='mini-box'>
+              <img src={el30} alt="" />
+              <div>
+                <b>Repo</b>
+                <p>May 17, 2022 at 12:08</p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={eth} alt="Ethereum" />
+                <h3>1.75</h3>
+              </div>
             </div>
-          </div>
-          <div className='mini-box'>
-            <img src={el30} alt="" />
-            <div>
-              <b>Repo</b>
-              <p>May 17, 2022 at 12:08</p>
+            <div className='mini-box'>
+              <img src={el31} alt="" />
+              <div>
+                <b>Repo</b>
+                <p>May 17, 2022 at 12:08</p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <img src={eth} alt="Ethereum" />
+                <h3>1.75</h3>
+              </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src={eth} alt="Ethereum" />
-              <h3>1.75</h3>
-            </div>
-          </div>
-          <div className='mini-box'>
-            <img src={el31} alt="" />
-            <div>
-              <b>Repo</b>
-              <p>May 17, 2022 at 12:08</p>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src={eth} alt="Ethereum" />
-              <h3>1.75</h3>
-            </div>
-          </div>
 
-          <b >Your Bid</b>
-          <form action="">
-            <select name="" id=""><option value="">ETH</option></select>
-            <input type="text" />
-          </form>
+            <b >Your Bid</b>
+            <form action="">
+              <select name="" id=""><option value="">ETH</option></select>
+              <input type="text" />
+            </form>
 
-          <button onClick={() => setModal(false)} className="button1">
-            <img src={vec} alt="Place bid icon" />
-            Submit
-          </button>
+            <button onClick={() => setModal(false)} className="button1">
+              <img src={vec} alt="Place bid icon" />
+              Submit
+            </button>
+          </div>
         </div>
       )}
     </div>
