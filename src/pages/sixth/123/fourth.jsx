@@ -159,9 +159,10 @@ function Cards(props) {
 
 
 
-const Fourth = () => {
+export const Fourth = () => {
   return <div className='container'>
     <ProDeteil />
+
     <FromCreator />
   </div>
 }
