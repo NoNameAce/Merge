@@ -28,51 +28,51 @@ export default function App() {
           element: <First></First>
         },
         {
-          path: "second",
+          path: "/second",
           element: <Second></Second>
         },
         {
-          path: "third",
+          path: "/third",
           element: <Third></Third>
         },
         {
-          path: "fourth",
-          element: <Fourth></Fourth>,
+          path: "/fourth",
+          element: <Fourth/>,
 
-          path: "fifth",
-          element: <Fifth></Fifth>,
+          path: "/fifth",
+          element: <Fifth />,
         },
         {
-          path: "sixth",
-          element: <Sixth></Sixth>,
+          path: "/sixth",
+          element: <Sixth />,
         },
         {
-          path: "seventh",
-          element: <Seventh></Seventh> ,
+          path: "/seventh",
+          element: <Seventh /> ,
         },
         {
-          path: "eighth",
-          element: <Eighth></Eighth>,
+          path: "/eighth",
+          element: <Eighth />,
         },
         {
-          path: "ninth",
-          element: <Ninth></Ninth>,
+          path: "/ninth",
+          element: <Ninth />,
         },
         {
-          path: "tenth",
-          element: <Tenth></Tenth>,
+          path: "/tenth",
+          element: <Tenth />,
         },
         {
-          path: "eleventh",
-          element: <Eleventh></Eleventh>,
+          path: "/eleventh",
+          element: <Eleventh />,
         },
         {
-          path: "twelfth",
-          element: <Twelfth></Twelfth>,
+          path: "/twelfth",
+          element: <Twelfth />,
         },
         {
-          path: "thirteenth",
-          element: <Thirteenth></Thirteenth>,
+          path: "/thirteenth",
+          element: <Thirteenth />,
         },
       ],
     }
