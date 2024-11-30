@@ -11,7 +11,7 @@ import Eighth from './pages/eighth/eighth';
 import Ninth from './pages/ninth/ninth';
 import Tenth from './pages/tenth/tenth';
 import Eleventh from './pages/eleventh/eleventh';
-import Twelfth from './pages/twelfth/twelfth'; // Ensure the import path is correct  
+import Twelfth from './pages/twelfth/twelfth';
 import Thirteenth from './pages/thirteenth/thirteenth';
 
 const router = createBrowserRouter([
